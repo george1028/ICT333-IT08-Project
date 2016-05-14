@@ -1,0 +1,124 @@
+1.0 Initiating
+	1.1 Acquire the project
+	1.2 Scope management
+		1.2.1 Define requirements
+			1.2.1.1 Study the client document
+			1.2.1.2 Enquiry the client for requirements
+			1.2.1.3 Finish the requirement document
+		1.2.2 Requirement document approved
+			1.2.2.1 Sign the Deliverable Task Breakdown Statement
+			1.2.2.2 Submit the requirement document
+		1.2.3 Develop project charter
+		1.2.5 Define scope
+			1.2.5.1 Create scope statement
+			1.2.5.2 Create work breakdown structure
+2.0 Analysis
+	2.1 Risk management
+		2.1.1 Identify risks
+		2.1.2 Perform qualitative risk analysis using Probability/Impact Matrix
+		2.1.3 Develop risk mitigation strategies
+	2.2 Human resource management
+		2.2.1 Identify different roles of the members
+		2.2.2 Identify responsible units by drawing Responsibility Assignment Matrix
+		2.2.3 Develop conflict resolving plan
+3.0 Planning
+	3.1 Time management
+		3.1.1 Identify the dependencies among activities
+		3.1.2 Develop the Gantt chart
+	3.2 Communication management
+		3.2.1 Analyze communication requirements of the stakeholders
+		3.2.2 Determine communication methods and the flow of information
+	3.3 Quality management
+		3.3.1 Identify product functions
+		3.3.2 Define successful criteria for the product
+	3.4 Cost management
+		3.4.1 Identify intangible costs in terms of labour hours
+	3.5 Develop project management plan
+4.0 Executing
+	4.1 Develop the software
+		4.1.1 Create the database containing
+			4.1.1.1 server details
+			4.1.1.2 service details
+			4.1.1.3 probing test details
+			4.1.1.4 IP address details
+		4.1.2 Develop the probing module using
+			4.1.2.1 ICMPv4
+			4.1.2.2 ICMPv6
+			4.1.2.3 HTTP GET request using IPv4 addresses
+			4.1.2.4 HTTP GET request using IPv6 addresses
+			4.1.2.5 SMTP connection towards IPv4 addresses
+			4.1.2.6 SMTP connection towards IPv6 addresses
+			4.1.2.7 DNS query towards IPv4 addresses
+			4.1.2.8 DNS query towards IPv6 addresses
+			4.1.2.9 implementing connection timeout and error handling
+			4.1.2.10 implementing the function of reading a list of servers
+		4.1.3 Develop the processing and storing module by
+			4.1.3.1 removing measurement errors
+			4.1.3.2 storing server and measurement data
+		4.1.4 Develop the searching module by
+			4.1.4.1 capturing the keywords
+			4.1.4.2 searching the keywords in database
+			4.1.4.3 presenting the data in the window
+		4.1.5 Develop the presenting module by
+			4.1.5.1 presenting the percentages of IPv6 available servers in each continent by
+				4.1.5.1.1 sending the query to database
+				4.1.5.1.2 calculating the numbers in the database
+				4.1.5.1.3 presenting the result in pie chart
+			4.1.5.2 presenting the percentages of IPv6 available servers in each country by
+				4.1.5.2.1 sending the query to database
+				4.1.5.2.2 calculating the numbers in the database
+				4.1.5.2.3 presenting the result in pie chart
+			4.1.5.3 presenting the percentages of IPv6 available servers for different server types by
+				4.1.5.3.1 sending the query to database
+				4.1.5.3.2 calculating the numbers in the database
+				4.1.5.3.3 presenting the result in column chart
+			4.1.5.4 presenting the performance of individual server when probed using IPv4 or IPv6 by
+				4.1.5.4.1 sending the query to database
+				4.1.5.4.2 calculating the numbers in the database
+				4.1.5.4.3 presenting the result in multi-series column chart
+		4.1.6 Develop the diagnosis module by
+			4.1.6.1 passing the result from the probing test that the server is not reachable using Ipv6
+			4.1.6.2 determining if the server is not IPv6 available
+			4.1.6.2 or determining either the server is misconfigured or the network doesn't support IPv6
+	4.2 Test the software by testing
+		4.2.1 probing functions
+		4.2.2 data processing
+		4.2.3 data storage
+		4.2.4 searching functions
+		4.2.5 data presenting function
+		4.2.6 diagnosis function
+	4.3 Probe Internet servers
+		4.3.1 Get a list of IPv6 available servers
+		4.3.2 Probe these servers at regular time interval
+	4.4 Test the database and presentation function
+		4.4.1 Test the searching function by searching
+			4.4.1.1 normal words
+			4.4.1.2 extremely long strings and those with control characters
+		4.4.2 Test the presenting function by testing
+			4.4.2.1 percentage of IPv6 available servers
+			4.4.2.2 performance of individual server
+			4.4.2.3 performance of non-exising servers and those names with control characters
+5.0 Controlling
+	5.1 Validate scope
+		5.1.1 Make sure the product is within the scope
+	5.2 Review project plan
+		5.2.1 Make sure the project is being conducted as scheduled
+	5.3 Status Report
+		5.3.1 Regular report about the progress of the development of the product
+	5.4 Report performance
+		5.4.1 Regular report about the performance of team members
+	5.5 Control changes
+		5.5.1 Identify possible changes
+		5.5.2 Determine if change is necessary
+		5.5.3 Approve the change
+		5.5.4 Apply change in the product and the documents
+6.0 Closing
+	6.1 Archive documentations
+	6.2 Prepare final project report
+		6.2.1 Finalize the project report
+	6.3 Present final project
+		6.3.1 Prepare the slides for presentation
+		6.3.2 Prepare the scripts for presentation
+		6.3.3 Prepare the software for presentation
+		6.3.4 Present the project
+	6.4 Project completed

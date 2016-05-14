@@ -1,0 +1,64 @@
+try
+            {
+                string q = "SELECT * FROM `exam1`.`courses`;";
+                mcd = mcon.CreateCommand();
+                mcd.CommandText = q;
+                openCon();       
+                //create a binding between the query and the data table     
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = mcd;
+                DataSet dbdataset = new DataSet();
+                sda.Fill(dbdataset, "`exam1`.`courses`");
+                //create the binding between the data table and the grid view
+                DataTable builtTable = dbdataset.Tables["`exam1`.`courses`"];
+
+                //PRINTS THE COLUMNS TITLES
+                foreach (DataColumn dc in builtTable.Columns)
+                    textBox3.Text += (dc + "\t");
+
+            //A NEW LINE
+            textBox3.Text += Environment.NewLine;
+
+                //Loop the People Table
+                foreach (DataRow row in builtTable.Rows)
+                {
+                    foreach (var field in row.ItemArray)
+                    {
+                        textBox3.Text +=(field + "\t");
+                    }
+                textBox3.Text += Environment.NewLine;
+                }
+
+                //Close the connection.
+                closeCon();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+ try
+           {
+                string q = "SELECT * FROM `exam1`.`courses`;";
+                mcd = mcon.CreateCommand();
+                mcd.CommandText = q;
+                openCon();       
+                //create a binding between the query and the data table     
+                MySqlDataAdapter sda = new MySqlDataAdapter();
+                sda.SelectCommand = mcd;
+                DataTable dbdataset = new DataTable();
+                sda.Fill(dbdataset);
+                //create the binding between the data table and the grid view
+                BindingSource bSource = new BindingSource();
+                bSource.DataSource = dbdataset;
+                dataGridView1.DataSource = bSource;
+                sda.Update(dbdataset);             
+
+                //Close the connection.
+                closeCon();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }   
+DataView dv=new DataView(dbdataset);
+dv.RowFilter = string.Format("Name Like '%{0}%'",textBox1.Text);

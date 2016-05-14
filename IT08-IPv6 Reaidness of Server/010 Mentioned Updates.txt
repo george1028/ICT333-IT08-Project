@@ -1,0 +1,26 @@
+1. Requirements and Analysis Document
+
+- Added Export table and chart functionalities and explained in brief
+- Amended a statement to add "Compare the percentage of IPv6 servers, there should be an option to choose server types
+ ..."
+- Cmd line probing that can specify location of log file is mentioned in the document now
+- Automatic Database(import initial database when software is installed at first or firstly) connection and import  is also mentioned.
+- Formatting
+- Updated Table of contents
+
+2. Project Management Plan
+
+- Reformatting
+- Correction to company name
+- Updated Table of contents
+
+3. Design Document
+
+- CRUD Matrix Update
+- Image of prototype updated and briefed
+- Mentioned functions in 6.3.1
+- Added information regarding log file
+- Updated Table of contents
+- Added version update to the version table.
+
+The other documents such as the Test Plan, User Manual and Executive summary have been attached into the same Zip File.
